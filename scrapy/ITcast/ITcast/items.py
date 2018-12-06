@@ -10,6 +10,7 @@ import scrapy
 
 class ItcastItem(scrapy.Item):
     # define the fields for your item here like:
+    # 关系模型映射
     name = scrapy.Field()
     title = scrapy.Field()
     info = scrapy.Field()
