@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from ITcast.items import ItcastItem
+# 在这里生效不了，只能等传到管道再处理
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
 class ItcastSpider(scrapy.Spider):
     # 爬虫名，启动爬虫时需要的参数，必需
+    # 传智播客老师数据爬取
     name = 'itcast'
     # 爬取域范围，允许爬虫在这个域名下进行爬取（可选）
     allowed_domains = ['http://www.itcast.cn']
